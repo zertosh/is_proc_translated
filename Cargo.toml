@@ -1,0 +1,14 @@
+[package]
+name = "is_proc_translated"
+version = "0.1.0"
+authors = ["Andres Suarez <zertosh@gmail.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "Detect if the current process is running as a translated binary under Rosetta"
+repository = "https://github.com/zertosh/is_proc_translated"
+documentation = "https://docs.rs/is_proc_translated"
+categories = ["apple", "macos"]
+readme = "README.md"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+libc = "0.2"
