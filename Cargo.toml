@@ -7,7 +7,7 @@ license = "MIT OR Apache-2.0"
 description = "Detect if the current process is running as a translated binary under Rosetta"
 repository = "https://github.com/zertosh/is_proc_translated"
 documentation = "https://docs.rs/is_proc_translated"
-categories = ["apple", "macos"]
+categories = ["os::macos-apis"]
 readme = "README.md"
 
 [target.'cfg(target_os = "macos")'.dependencies]
