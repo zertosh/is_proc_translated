@@ -10,5 +10,5 @@ documentation = "https://docs.rs/is_proc_translated"
 categories = ["os::macos-apis"]
 readme = "README.md"
 
-[target.'cfg(target_os = "macos")'.dependencies]
+[target.'cfg(all(target_os = "macos", target_arch = "x86_64"))'.dependencies]
 libc = "0.2"
